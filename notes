@@ -1,0 +1,92 @@
+Current video - 32
+
+node modules -- contains react dependencies
+package json -- metadata , versions
+
+Dom -- document object model; represents the entire UI of web application in a tree data structure
+Whenever there is chnage in state of application, DOM is updated and it represents the change.
+
+React maintains two virtual DOMs every time. The first one contains the updated virtual DOM, and the other is a pre-updated version of the updated virtual DOM. It compares the pre-updated version of the updated virtual DOM and finds what was changed in the DOM, like which components will be changed.
+React uses batch updates to update the actual DOM. It changes to the actual DOM are sent in batches rather than sending any updates for the single change into the component's state.
+
+JSX -- Javascript XML
+
+Default exports can be used without curly braces when importing
+Named exports which is a specific export variable should be used with curly braces when importing
+More Info -- https://stackoverflow.com/a/36796281/8521222
+
+CSS Styling
+1) External import
+2) Internal -- ie defining within that file
+3) Inline -- done with style attribute and it's value must be a javascript object
+
+
+function myname (name) {
+
+
+}
+
+2nd way to rewrite above function
+
+const myname = (name) => {
+
+
+}
+
+1)map function can be used to iterate data in react
+consists of parameters val, index
+
+Syntax 
+array.map(callback_function(currValue, index, arr), thisValue)
+
+Example
+
+<script>
+
+const arr1 = ['prayag', 'bhatia', 'react'];
+
+const arr2 = arr1.map(func (cvalue) => {
+    return cvalue ;
+})
+
+</script>
+
+2)Ternary operator syntax
+condition ? expTrue : expFalse
+
+3)Object destructing
+
+let x = props.x ;
+let y = props.y ;
+
+let {x,y} = props ;
+
+4) useState returns 2 things -- current data and updated data
+
+
+5) Variable declaration
+-> const -- for constants
+-> let and var -- for again redeclaration
+ let is being used instead of var
+
+ 6) setInterval -- takes a callback function and time interval after which it needs to be called 
+    can be useful if we want to trigger function without a onclick of a button
+
+
+7) three dots in React Javascript
+7.1) Concatenating 2 arrays
+const fullname = ['Vinod', 'Thapa']
+const biodata = [1, 'abc' , ...fullname]
+
+biodata === > [1, 'abc' ,'Vinod', 'Thapa']
+
+8) Hooks
+useState
+
+
+9) button -> onClick
+    input form --> onChange
+
+
+10) Material UI icons
+Installation -- npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
