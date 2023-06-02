@@ -15,6 +15,10 @@ export default function TodoListMaterial() {
   }
 
   const AddItem = () => {
+    if (currInput === '') {
+        alert('Cannot add empty item');
+        return;
+    }
     const newItems = [...Items, currInput] ;
     setItems(newItems) ;
     setInput('') ;
