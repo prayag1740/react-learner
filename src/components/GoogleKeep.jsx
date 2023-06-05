@@ -16,12 +16,17 @@ export default function GoogleKeep() {
     setItem(newData);
   }
 
+  const deleteNote = (id) => {
+    let newData = currItem.filter((_, idx) => {return idx !== id})
+    setItem(newData);
+  }
+
   return (
     <>
         <Header />
         <CreateNote addNote={addNote} />
           {currItem.map((note, idx) => {
-            return <Notes title={note.title} content={note.content} key={idx} id={idx} />
+            return <Notes title={note.title} content={note.content} key={idx} id={idx} deleteNote={deleteNote} />
           })}
         <Footer />
     </>
