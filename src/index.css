@@ -9,20 +9,17 @@
   margin-top: 100px;
 }
 
-/* body {
-  background-color: #ACF6E8;
-} */
 
 .light_blue {
   background-color: #ACF6E8;
-  min-height: 100vh; 
+  min-height: 100vh; /* ensures minimum height for the element */
 }
 
 .box {
   background-color: #DAF7A6;
   width: 500px;
   height: 70px;
-  margin: 100px auto 0;
+  margin: 100px auto 0; /* accepts 4 params -- top right left bottom  */
   text-align: center;
   border-radius: 10px;
 }
@@ -40,6 +37,10 @@ button {
   justify-content: center;
 }
 
+/*CSS property is used to create a flex container and enable a flexbox layout for its child elements
+  ->You can control how flex items are aligned along the main axis (justify-content) and the cross axis (align-items). Common values include flex-start, flex-end, center, space-between, space-around, and stretch.
+*/
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
@@ -55,6 +56,10 @@ button {
   align-items: center;
   text-align: center;
 }
+
+/*  CSS property is used to horizontally align the text within an element. 
+It is commonly applied to block-level elements such as <div>, <p>, or <h1> to center-align the text 
+content within the element */
 
 .center_div {
   width: 25%;

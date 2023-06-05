@@ -26,6 +26,10 @@ export default function Home() {
         navigate('/todoapp2')   ;
     } ;
 
+    const GoogleKeep = () => {
+      navigate('/googlekeep')   ;
+  } ;
+
     
 
   return (
@@ -41,6 +45,7 @@ export default function Home() {
       </div>
       <div className='button-container'>
         <button onClick={TodoAppRedirect2}>Todo App 2</button>
+        <button onClick={GoogleKeep} style={{marginLeft: '300px'}}>Google Keep App</button>
       </div>
     </>
   )

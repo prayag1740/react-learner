@@ -1,0 +1,121 @@
+.header {
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-left: 50px;
+  background-color: yellow;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+
+.main_note {
+  width:500x ;
+  margin: 20px auto ; 
+  padding: 15px 10px 5px 10px ;
+}
+
+form {
+  min-height: 50px;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+  width: 40%;
+  left : 500px;
+}
+
+input {
+  width: 100%;
+  line-height: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.MuiButton-root {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  bottom: -28px;
+  left: 700px;
+  cursor: pointer;
+  background-color: #fff !important;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 50% !important;
+}
+
+.MuiButton-root .plus_sign {
+  font-size: 45px !important;
+  font-weight: 900;
+  color: #f4b400;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+}
+
+.note {
+  background-color: white;
+  box-shadow: 0 2px 5px #ccc;
+  width: 240px;
+  border-radius: 7px;
+  padding: 20px;
+  float: left;
+  margin: 20px;
+  height: 240px ;
+}
+
+.note_heading {
+  font-size: 1.1rem;
+  background-color: white;
+  margin-bottom: 10px;
+  border:none;
+  outline: none;
+}
+
+.note p {
+  font-size: 1.1rem;
+  background-color: white;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.note .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 15px -10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: #f4b400;
+  background: transparent;
+  left : 160px;
+}
+
+.deleteIcon {
+  width: 0.7rem;
+}
+
