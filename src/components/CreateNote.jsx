@@ -11,6 +11,12 @@ export default function CreateNote(props) {
     "content" : ""
   })
 
+  const [expand, setExpand] = useState(false) ;
+
+  const expandNote = () => {
+    setExpand(!expand) ;
+  }
+
   const InputEvent = (event) => {
 
     const {name, value} = event.target ;   
@@ -28,12 +34,13 @@ export default function CreateNote(props) {
     <>
     <div className='main_note'>
         <form>
-            <input type="text" placeholder='title' name="title" value={note.title} onChange={InputEvent} autoComplete='off' />
+           {expand ? 
+            <input type="text" placeholder='title' name="title" value={note.title} onChange={InputEvent} autoComplete='off' /> : null }
             <br />
-            <textarea rows='' column='' name="content" value={note.content} onChange={InputEvent}  placeholder='Write a note ...' />
-            <Button variant='contained' onClick={addEvent} >
+            <textarea rows='' column='' name="content" value={note.content} onChange={InputEvent}  placeholder='Write a note ...' onClick={expandNote} />
+            {expand ? <Button variant='contained' onClick={addEvent} >
              <AddIcon className='plus_sign' />
-            </Button>
+            </Button> : null }
         </form>
     </div>
     </>
