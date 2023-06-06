@@ -10,6 +10,7 @@ import TodoListMaterial from './components/TodoListMaterial'
 import Home from './components/Home';
 import ReactChallenge8 from './components/ReactChallenge8'
 import GoogleKeep from './components/GoogleKeep'
+import ContextApi from './components/ContextApi';
 // import OrderedList, {myName} from './components/OrderedList';
 
 
@@ -91,6 +92,7 @@ export default function App() {
         <Route exact path="/todoapp2" element={<TodoListMaterial />} />
         <Route exact path="/changevariable" element={<ReactChallenge8 />} />
         <Route exact path="/googlekeep" element={<GoogleKeep />} />
+        <Route exact path="/contextapi" element={<ContextApi />} />
         <Route exact path="/" element={<Home />} />
       </Routes>
   </>

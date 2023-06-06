@@ -30,6 +30,10 @@ export default function Home() {
       navigate('/googlekeep')   ;
   } ;
 
+    const ContextAPIRedirect = () => {
+      navigate('/contextapi') ;
+    }
+
     
 
   return (
@@ -46,6 +50,9 @@ export default function Home() {
       <div className='button-container'>
         <button onClick={TodoAppRedirect2}>Todo App 2</button>
         <button onClick={GoogleKeep} style={{marginLeft: '300px'}}>Google Keep App</button>
+      </div>
+      <div className='button-container'>
+        <button onClick={ContextAPIRedirect}>ContextAPI</button>
       </div>
     </>
   )

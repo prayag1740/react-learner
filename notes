@@ -90,3 +90,9 @@ useState
 
 10) Material UI icons
 Installation -- npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+
+11) Context API -- alternative to prop drilling ;
+    allows to send data to child components from parent comp without passing prop to each level.
+    Ex -- Parent Comp A -> Child Comp B -> Child Comp C -> Child Comp D
+    Can directly pass components to child comp D without passing through B and C
+    createContext ; provider ; consumer
