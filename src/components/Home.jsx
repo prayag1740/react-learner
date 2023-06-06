@@ -34,6 +34,10 @@ export default function Home() {
       navigate('/contextapi') ;
     }
 
+    const UseEffectChallengeRedirect = () => {
+      navigate('/useeffect');
+    }
+
     
 
   return (
@@ -53,6 +57,7 @@ export default function Home() {
       </div>
       <div className='button-container'>
         <button onClick={ContextAPIRedirect}>ContextAPI</button>
+        <button onClick={UseEffectChallengeRedirect} style={{marginLeft: '300px'}}>Use Effect Challenge</button>
       </div>
     </>
   )

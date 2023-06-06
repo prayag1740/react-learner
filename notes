@@ -96,3 +96,7 @@ Installation -- npm install @mui/icons-material @mui/material @emotion/styled @e
     Ex -- Parent Comp A -> Child Comp B -> Child Comp C -> Child Comp D
     Can directly pass components to child comp D without passing through B and C
     createContext ; provider ; consumer
+
+    alternative is to use useCOntext Hook
+
+12) useEffect -- what to perform after the render ; gets called on it's own

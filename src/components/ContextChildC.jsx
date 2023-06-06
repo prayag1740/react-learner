@@ -1,4 +1,4 @@
-import React, {useContext} from 'react' ;
+import React, {useContext, useEffect} from 'react' ;
 import {Name} from './ContextApi' ;
 
 
@@ -27,10 +27,14 @@ export default function ContextChildC() {
 
   const name = useContext(Name) ;
 
+  useEffect (() => {
+    alert("helllo !!!");
+  }) //will be called after every render to this component automatically ; if passed empty array only be shown on first render
+
   return (
     <>
     <h1>Hello my name is {name} </h1>
-    <h4>&nbsp;&nbsp;I am studying ContextAPI in order to pass data to child components without sending to intermediate levels</h4>
+    <h4>&nbsp;&nbsp;I am studying useContext in order to pass data to child components without sending to intermediate levels</h4>
     </>
   )
 }
