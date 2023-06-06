@@ -6,7 +6,7 @@ const Name = createContext() ;
 export default function ContextApi() {
   return (
     <>
-        <Name.Provider value={"Prayag Bhatia"} >
+        <Name.Provider value={"Prayag"} >
         <ContextChildA />
         </Name.Provider>
     </>
