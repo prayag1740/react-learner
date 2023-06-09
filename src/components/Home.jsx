@@ -37,6 +37,9 @@ export default function Home() {
     const UseEffectChallengeRedirect = () => {
       navigate('/useeffect');
     }
+    const PokemonRedirect = () => {
+      navigate('/pokemon');
+    }
 
     
 
@@ -58,6 +61,9 @@ export default function Home() {
       <div className='button-container'>
         <button onClick={ContextAPIRedirect}>ContextAPI</button>
         <button onClick={UseEffectChallengeRedirect} style={{marginLeft: '300px'}}>Use Effect Challenge</button>
+      </div>
+      <div className='button-container'>
+        <button onClick={PokemonRedirect}>Pokemon</button>
       </div>
     </>
   )

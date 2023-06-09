@@ -12,6 +12,7 @@ import ReactChallenge8 from './components/ReactChallenge8'
 import GoogleKeep from './components/GoogleKeep'
 import ContextApi from './components/ContextApi';
 import UseEffectChallenge from './components/UseEffectChallenge';
+import Pokemon from './components/Pokemon';
 // import OrderedList, {myName} from './components/OrderedList';
 
 
@@ -95,6 +96,7 @@ export default function App() {
         <Route exact path="/googlekeep" element={<GoogleKeep />} />
         <Route exact path="/contextapi" element={<ContextApi />} />
         <Route exact path="/useeffect" element={<UseEffectChallenge />} />
+        <Route exact path="/pokemon" element={<Pokemon />} />
         <Route exact path="/" element={<Home />} />
       </Routes>
   </>
